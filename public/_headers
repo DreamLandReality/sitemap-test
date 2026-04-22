@@ -1,0 +1,27 @@
+/*
+  Cache-Control: no-store
+  X-Content-Type-Options: nosniff
+  Content-Security-Policy: frame-ancestors 'self' http://localhost:3000 https://admin-panel-mu-sand.vercel.app
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-XSS-Protection: 1; mode=block
+
+/defaults/*
+  Cache-Control: public, max-age=86400
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/sitemap-index.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml; charset=utf-8
+  Link: </sitemap-index.xml>; rel="sitemap"
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+
+/llms.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain; charset=utf-8
