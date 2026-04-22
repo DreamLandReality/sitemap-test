@@ -1,10 +1,12 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://example.com', // Replaced at deploy time
+  site: 'https://sitemap-test-em5.pages.dev', // Replaced at deploy time
   integrations: [
-    tailwind()
+    tailwind(),
+    sitemap()
   ],
   build: {
     format: 'directory'
