@@ -7,7 +7,7 @@ export default defineConfig({
   integrations: [
     tailwind(),
     sitemap({
-      filter: (page) => page.endsWith('/') // 👈 fix
+      filter: (page) => page.endsWith('/')
     })
   ],
   build: {
